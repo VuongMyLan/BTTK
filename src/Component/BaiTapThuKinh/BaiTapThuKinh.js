@@ -1,21 +1,22 @@
 import React, { Component } from 'react'
-import HandleEvent from '../../HandleEvent/HandleEvent'
 import BTTKCarousel from './BTTKCarousel'
 import BTTKHeader from './BTTKHeader'
-import BTTKProduct from './BTTKProduct'
+import './BaiTapThuKinh.css';
 
 export default class BaiTapThuKinh extends Component {
     render() {
         return (
-            <div>
+            <div className="background" style={{
+            backgroundImage: "url(./img/glassesImage/background.jpg)",  
+            backgroundColor: 'rgba(0, 0, 0, 0.349)',
+            backgroundPosition: 'center',
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
+           }}>
+           
                 <BTTKHeader></BTTKHeader>
-                <BTTKCarousel>
-                    
-                </BTTKCarousel>
-                <BTTKProduct  />
-
-
-                <HandleEvent></HandleEvent>
+                <BTTKCarousel></BTTKCarousel>
+               
             </div>
         )
     }
